@@ -1,0 +1,1 @@
+adottszam=int(input)
