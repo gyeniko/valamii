@@ -1,6 +1,5 @@
 try:
     adottszam=int(input("Adjon meg egy egész számot!"))
-    ls = []
     for i in range(100001):
         szam = str(i)
         forditva = szam[::-1]
