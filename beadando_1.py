@@ -1,4 +1,4 @@
-n = 100
+n = 999
 
 def hanyolyanszamvan(n):
     db = 0
@@ -8,6 +8,7 @@ def hanyolyanszamvan(n):
             if j in "047":
                 x += 1
         if x == len(str(i)):
+            print(i)
             db += 1
     return db
 
