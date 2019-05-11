@@ -22,9 +22,7 @@ try:
                 else:
                     ls2.append(ls[j-1]+ls[j])
             ls = ls2
-            s = ""
-            for t in range(n1-i):
-                s += " "
+            s = " " * (n1-i)
             for x in ls:
                 s += str(x)
                 s += " "
