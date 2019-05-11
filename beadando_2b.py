@@ -6,10 +6,12 @@ try:
 
     def pascalhsz(n1,n2):
         if n1 <= n2:
-            return "Az n1 nem nagyobb, mint az n2"
+            print("Az első szám kisebb mint a második")
+            return
         ls = [1]
+        s = (n1+1) * " " + "1"
         for i in range(n1):
-            print(ls)
+            print(s)
             if i+1 == n2:
                 plt.plot(ls,"go")
 
@@ -20,6 +22,12 @@ try:
                 else:
                     ls2.append(ls[j-1]+ls[j])
             ls = ls2
+            s = ""
+            for t in range(n1-i):
+                s += " "
+            for x in ls:
+                s += str(x)
+                s += " "
         plt.show()
     pascalhsz(n1,n2)
 
