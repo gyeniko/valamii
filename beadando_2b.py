@@ -6,7 +6,7 @@ try:
 
     def pascalhsz(n1,n2):
         if n1 <= n2:
-            print("Az első szám kisebb mint a második")
+            print("A második szám nem kisebb mint az első")
             return
         ls = [1]
         s = (n1+1) * "  " + "1"
