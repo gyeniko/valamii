@@ -9,7 +9,7 @@ try:
             print("Az első szám kisebb mint a második")
             return
         ls = [1]
-        s = (n1+1) * " " + "1"
+        s = (n1+1) * "  " + "1"
         for i in range(n1):
             print(s)
             if i+1 == n2:
@@ -22,10 +22,17 @@ try:
                 else:
                     ls2.append(ls[j-1]+ls[j])
             ls = ls2
-            s = " " * (n1-i)
+            s = "  " * (n1-i)
             for x in ls:
-                s += str(x)
-                s += " "
+                if x < 10:
+                    s += str(x)
+                    s += "   "
+                elif x < 100:
+                    s += str(x)
+                    s += "  "
+                else:
+                    s += str(x)
+                    s += " "
         plt.show()
     pascalhsz(n1,n2)
 
